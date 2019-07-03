@@ -103,34 +103,6 @@
         }
       }
     },
-    "hello-app-e2e": {
-      "root": "projects/hello-app-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/hello-app-e2e/protractor.conf.js",
-            "devServerTarget": "hello-app:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "hello-app:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/hello-app-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "world-app": {
       "root": "projects/world-app/",
       "sourceRoot": "projects/world-app/src",
@@ -224,34 +196,6 @@
               "projects/world-app/tsconfig.app.json",
               "projects/world-app/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "world-app-e2e": {
-      "root": "projects/world-app-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/world-app-e2e/protractor.conf.js",
-            "devServerTarget": "world-app:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "world-app:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/world-app-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
