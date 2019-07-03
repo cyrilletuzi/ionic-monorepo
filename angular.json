@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hello-app",
+            "outputPath": "projects/hello-app/www",
             "index": "projects/hello-app/src/index.html",
             "main": "projects/hello-app/src/main.ts",
             "polyfills": "projects/hello-app/src/polyfills.ts",
@@ -163,7 +163,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/world-app",
+            "outputPath": "projects/world-app/www",
             "index": "projects/world-app/src/index.html",
             "main": "projects/world-app/src/main.ts",
             "polyfills": "projects/world-app/src/polyfills.ts",
