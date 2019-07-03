@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "shared-tools": [
+        "dist/shared-tools"
+      ],
+      "shared-tools/*": [
+        "dist/shared-tools/*"
+      ]
+    }
   }
 }
