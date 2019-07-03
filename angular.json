@@ -23,7 +23,15 @@
               "projects/hello-app/src/assets"
             ],
             "styles": [
-              "projects/hello-app/src/styles.css"
+              {
+                "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/global.scss"
+              },
+              {
+                "input": "src/app/app.scss"
+              }
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -80,7 +88,15 @@
             "tsConfig": "projects/hello-app/tsconfig.spec.json",
             "karmaConfig": "projects/hello-app/karma.conf.js",
             "styles": [
-              "projects/hello-app/src/styles.css"
+              {
+                "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/global.scss"
+              },
+              {
+                "input": "src/app/app.scss"
+              }
             ],
             "scripts": [],
             "assets": [
@@ -123,7 +139,15 @@
               "projects/world-app/src/assets"
             ],
             "styles": [
-              "projects/world-app/src/styles.css"
+              {
+                "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/global.scss"
+              },
+              {
+                "input": "src/app/app.scss"
+              }
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -180,7 +204,15 @@
             "tsConfig": "projects/world-app/tsconfig.spec.json",
             "karmaConfig": "projects/world-app/karma.conf.js",
             "styles": [
-              "projects/world-app/src/styles.css"
+              {
+                "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/global.scss"
+              },
+              {
+                "input": "src/app/app.scss"
+              }
             ],
             "scripts": [],
             "assets": [
