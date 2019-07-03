@@ -29,13 +29,13 @@
             ],
             "styles": [
               {
-                "input": "src/theme/variables.scss"
+                "input": "projects/hello-app/src/theme/variables.scss"
               },
               {
-                "input": "src/global.scss"
+                "input": "projects/hello-app/src/global.scss"
               },
               {
-                "input": "src/app/app.scss"
+                "input": "projects/hello-app/src/app/app.scss"
               }
             ],
             "scripts": [],
@@ -94,13 +94,13 @@
             "karmaConfig": "projects/hello-app/karma.conf.js",
             "styles": [
               {
-                "input": "src/theme/variables.scss"
+                "input": "projects/hello-app/src/theme/variables.scss"
               },
               {
-                "input": "src/global.scss"
+                "input": "projects/hello-app/src/global.scss"
               },
               {
-                "input": "src/app/app.scss"
+                "input": "projects/hello-app/src/app/app.scss"
               }
             ],
             "scripts": [],
@@ -179,13 +179,13 @@
             ],
             "styles": [
               {
-                "input": "src/theme/variables.scss"
+                "input": "projects/world-app/src/theme/variables.scss"
               },
               {
-                "input": "src/global.scss"
+                "input": "projects/world-app/src/global.scss"
               },
               {
-                "input": "src/app/app.scss"
+                "input": "projects/world-app/src/app/app.scss"
               }
             ],
             "scripts": [],
@@ -244,13 +244,13 @@
             "karmaConfig": "projects/world-app/karma.conf.js",
             "styles": [
               {
-                "input": "src/theme/variables.scss"
+                "input": "projects/world-app/src/theme/variables.scss"
               },
               {
-                "input": "src/global.scss"
+                "input": "projects/world-app/src/global.scss"
               },
               {
-                "input": "src/app/app.scss"
+                "input": "projects/world-app/src/app/app.scss"
               }
             ],
             "scripts": [],
