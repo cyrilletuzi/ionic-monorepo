@@ -1,0 +1,17 @@
+{
+  "defaultProject": "hello-app",
+  "projects": {
+    "hello-app": {
+      "name": "Hello app",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/hello-app"
+    },
+    "world-app": {
+      "name": "World app",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/world-app"
+    }
+  }
+}
