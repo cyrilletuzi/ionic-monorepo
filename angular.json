@@ -2,5 +2,135 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "hello-app": {
+      "root": "projects/hello-app/",
+      "sourceRoot": "projects/hello-app/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/hello-app",
+            "index": "projects/hello-app/src/index.html",
+            "main": "projects/hello-app/src/main.ts",
+            "polyfills": "projects/hello-app/src/polyfills.ts",
+            "tsConfig": "projects/hello-app/tsconfig.app.json",
+            "assets": [
+              "projects/hello-app/src/favicon.ico",
+              "projects/hello-app/src/assets"
+            ],
+            "styles": [
+              "projects/hello-app/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/hello-app/src/environments/environment.ts",
+                  "with": "projects/hello-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "hello-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "hello-app:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "hello-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hello-app/src/test.ts",
+            "polyfills": "projects/hello-app/src/polyfills.ts",
+            "tsConfig": "projects/hello-app/tsconfig.spec.json",
+            "karmaConfig": "projects/hello-app/karma.conf.js",
+            "styles": [
+              "projects/hello-app/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/hello-app/src/favicon.ico",
+              "projects/hello-app/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/hello-app/tsconfig.app.json",
+              "projects/hello-app/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "hello-app-e2e": {
+      "root": "projects/hello-app-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/hello-app-e2e/protractor.conf.js",
+            "devServerTarget": "hello-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "hello-app:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/hello-app-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "hello-app"
 }
