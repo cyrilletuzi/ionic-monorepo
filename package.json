@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start:hello": "ionic serve --project hello-app",
+    "start:world": "ionic serve --project world-app",
+    "build:hello": "ionic build --project hello-app",
+    "build:world": "ionic build --project world-app",
+    "lint:hello": "ng lint --project hello-app",
+    "lint:world": "ng lint --project world-app"
   },
   "private": true,
   "dependencies": {
