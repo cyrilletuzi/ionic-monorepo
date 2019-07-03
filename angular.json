@@ -20,7 +20,12 @@
             "tsConfig": "projects/hello-app/tsconfig.app.json",
             "assets": [
               "projects/hello-app/src/favicon.ico",
-              "projects/hello-app/src/assets"
+              "projects/hello-app/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               {
@@ -101,7 +106,12 @@
             "scripts": [],
             "assets": [
               "projects/hello-app/src/favicon.ico",
-              "projects/hello-app/src/assets"
+              "projects/hello-app/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ]
           }
         },
@@ -136,7 +146,12 @@
             "tsConfig": "projects/world-app/tsconfig.app.json",
             "assets": [
               "projects/world-app/src/favicon.ico",
-              "projects/world-app/src/assets"
+              "projects/world-app/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               {
@@ -217,7 +232,12 @@
             "scripts": [],
             "assets": [
               "projects/world-app/src/favicon.ico",
-              "projects/world-app/src/assets"
+              "projects/world-app/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ]
           }
         },
