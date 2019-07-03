@@ -130,6 +130,134 @@
           }
         }
       }
+    },
+    "world-app": {
+      "root": "projects/world-app/",
+      "sourceRoot": "projects/world-app/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/world-app",
+            "index": "projects/world-app/src/index.html",
+            "main": "projects/world-app/src/main.ts",
+            "polyfills": "projects/world-app/src/polyfills.ts",
+            "tsConfig": "projects/world-app/tsconfig.app.json",
+            "assets": [
+              "projects/world-app/src/favicon.ico",
+              "projects/world-app/src/assets"
+            ],
+            "styles": [
+              "projects/world-app/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/world-app/src/environments/environment.ts",
+                  "with": "projects/world-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "world-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "world-app:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "world-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/world-app/src/test.ts",
+            "polyfills": "projects/world-app/src/polyfills.ts",
+            "tsConfig": "projects/world-app/tsconfig.spec.json",
+            "karmaConfig": "projects/world-app/karma.conf.js",
+            "styles": [
+              "projects/world-app/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/world-app/src/favicon.ico",
+              "projects/world-app/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/world-app/tsconfig.app.json",
+              "projects/world-app/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "world-app-e2e": {
+      "root": "projects/world-app-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/world-app-e2e/protractor.conf.js",
+            "devServerTarget": "world-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "world-app:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/world-app-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "hello-app"
