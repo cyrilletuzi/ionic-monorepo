@@ -126,6 +126,30 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "hello-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "hello-app:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "hello-app:ionic-cordova-build",
+            "devServerTarget": "hello-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "hello-app:ionic-cordova-build:production",
+              "devServerTarget": "hello-app:serve:production"
+            }
+          }
         }
       }
     },
@@ -251,6 +275,30 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "world-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "world-app:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "world-app:ionic-cordova-build",
+            "devServerTarget": "world-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "world-app:ionic-cordova-build:production",
+              "devServerTarget": "world-app:serve:production"
+            }
           }
         }
       }
