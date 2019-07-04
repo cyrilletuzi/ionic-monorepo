@@ -7,9 +7,10 @@
     "start:world": "ionic serve --project world-app",
     "build:hello": "ionic build --project hello-app",
     "build:world": "ionic build --project world-app",
+    "build:shared-tools": "ng build shared-tools",
     "lint:hello": "ng lint --project hello-app",
     "lint:world": "ng lint --project world-app",
-    "postinstall": "cd projects/world-app && npm install"
+    "postinstall": "npm run build:shared-tools && cd projects/world-app && npm install"
   },
   "private": true,
   "dependencies": {
