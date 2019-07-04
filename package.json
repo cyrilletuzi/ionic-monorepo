@@ -7,6 +7,8 @@
     "start:world": "ionic serve --project world-app",
     "build:hello": "ionic build --project hello-app",
     "build:world": "ionic build --project world-app",
+    "build:world:ios": "ionic cordova build ios --project world-app",
+    "build:world:android": "ionic cordova android --project world-app",
     "build:shared-tools": "ng build shared-tools",
     "lint:hello": "ng lint --project hello-app",
     "lint:world": "ng lint --project world-app",
