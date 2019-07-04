@@ -9,12 +9,11 @@
     },
     "world-app": {
       "name": "World app",
-      "integrations": {},
+      "integrations": {
+        "cordova": {}
+      },
       "type": "angular",
       "root": "projects/world-app"
     }
-  },
-  "integrations": {
-    "cordova": {}
   }
 }
