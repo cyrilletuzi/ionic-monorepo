@@ -25,7 +25,12 @@ It should display:
 
 ## Running `world-app` project
 
-- Browser: `npm run start:world`
+- Run on browser: `npm run start:world`
+- Build on browser: `npm run build:world`
+- Build on Android: `npm run build:world:android`
+- Build on iOS: `npm run build:world:ios`
+
+Be sure to add `--project world-app` to any Ionic command you run directly. 
 
 It should display:
 - "shared-tools works" (checks the lib is working)
