@@ -8,7 +8,8 @@
     "build:hello": "ionic build --project hello-app",
     "build:world": "ionic build --project world-app",
     "lint:hello": "ng lint --project hello-app",
-    "lint:world": "ng lint --project world-app"
+    "lint:world": "ng lint --project world-app",
+    "postinstall": "cd world-app && npm install"
   },
   "private": true,
   "dependencies": {
