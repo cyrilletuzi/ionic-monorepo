@@ -2,6 +2,8 @@
 
 ## Requirements
 
+This demo supposes you're already able to launch Ionic projects.
+
 - Node 10
 - Global up to date `ionic` CLI: `npm install ionic -g`
 - [Android setup](https://ionicframework.com/docs/installation/android)
@@ -25,10 +27,15 @@ It should display:
 
 ## Running `world-app` project
 
-- Run on browser: `npm run start:world`
-- Build on browser: `npm run build:world`
-- Build on Android: `npm run build:world:android`
-- Build on iOS: `npm run build:world:ios`
+- Run
+  - browser: `npm run start:world`
+  - Android: `npm run start:world:android`
+  - iOS: `npm run start:world:ios`
+
+- Build:
+  - browser: `npm run build:world`
+  - Android: `npm run build:world:android`
+  - iOS: `npm run build:world:ios`
 
 Be sure to add `--project world-app` to any Ionic command you run directly. 
 
