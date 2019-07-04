@@ -13,5 +13,8 @@
       "type": "angular",
       "root": "projects/world-app"
     }
+  },
+  "integrations": {
+    "cordova": {}
   }
 }
