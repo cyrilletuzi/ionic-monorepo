@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SharedToolsModule } from 'shared-tools';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { SharedToolsModule } from 'shared-tools';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(),
     SharedToolsModule,
   ],
   providers: [],
