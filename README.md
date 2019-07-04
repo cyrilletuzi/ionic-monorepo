@@ -38,3 +38,8 @@ It should display:
 - "Welcome to hello-app!" (checks Angular is working)
 - on Android/iOS: a splash screen when loading (checks Cordova is working)
 
+## How to reproduce
+
+You can see the steps by following
+[the commits](https://github.com/cyrilletuzi/ionic-monorepo/commits/master).
+
